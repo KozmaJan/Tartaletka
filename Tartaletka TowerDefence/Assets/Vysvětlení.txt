@@ -1,0 +1,6 @@
+1) Waypointy
+ Nepřátelé následují waypointy
+ každý waypoint má svoje pořádí, nepřátelé můžou mít volit více cest proto jsou waypoint rozděleny do skupin, které může nepřítel následovat
+2) GameMaster
+	veškeré informace, jako životy, rychlost hry, a měna jsou zvládány přes gamemaster script
+	informace o vlnách jsou uloženy ve WaveInfo, nepřátelé jsou brání z listu

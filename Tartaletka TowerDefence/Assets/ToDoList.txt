@@ -1,2 +1,34 @@
 Úkoly:
 Udělat první hovor kde se dohodnem co dělat
+
+-Životy
+-Možnost zrychlit nebo zpomalit hru
+-Nepřátelé následující waypointy
+Typy věží:
+	laser
+	projektil
+	aoe
+	schopnost změnit směr nepřátel
+	schopnost zmrazit/spomalit nepřítele
+
+Lukáš:
+Seřazeno dle priority
+Priorita 1)
+	-sprite pro nepřítele
+	-sprite pro věž
+	-sprite pro projektili
+	-sprite pro ukazatel životů
+	-ikonka pro ukazatel peněz
+	-basic sprite pro mapu (celá mapa může být jeden sprite)
+Priorita 2) 
+	sprity pro víc jak jednoho nepřítele
+	sprity pro víc véží
+	sprite ikonky věží (pro stavění)
+Priorita 3)
+	Sprite pro UI:
+	ikonky věźí
+	ikonka pro prodání věźe
+	UI bar se šipkama, kde člověk může měnit rychlost hry (režimy zastavit, normální, zrychlit, hodně zrychlit)
+	game over obrazovka
+
+Téma spritu a celková estetika hry je na tobě, může to být fantasy, scifi, klidně i o husách co chrání svoji farmu a prdí na vetřelce vejce... je to jen na tobě
