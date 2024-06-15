@@ -1,19 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class GameMaster : MonoBehaviour
 { 
     public int lives = 15;
+    public int money = 100;
+    public bool placing  = false;
+    public GameObject towerPlaced = null;
+    public GameObject tower;
+    private Vector3 mousePos;
+    private bool canPlace;
+    private float personalSpace;
+    private RaycastHit2D obstacle;
+    private int cost;
+    private SpriteRenderer spriteRenderer;  
+    public List<GameObject> enemies = new List<GameObject>(); //list jmen nepřátel nepřátel, které čekají na spawnutí
+    public List<int> spawnPoint = new List<int>(); //Na jakém spawnpointu se mají spawnout (kdyby bylo víc spawnpointů)
+    public List<float> spawnTime = new List<float>(); //jaká doba musí uplynout v sekundách před jejich spawnutím
+    public List<int> count = new List<int>();
+    public List<GameObject> spawners = new List<GameObject>();
+    public float timeTillNextWave = 10000;
+    public int wave = 0;
+    private int level = 1;
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start(){
+        spawners = GameObject.FindGameObjectsWithTag("Spawner").ToList(); 
+        List<GameObject> tempList = GameObject.FindGameObjectsWithTag("Spawner").ToList();
+        foreach(GameObject spawner in tempList){
+            if (spawner.GetComponent<EnemySpawnerScript>()){
+                spawners[spawner.GetComponent<EnemySpawnerScript>().index - 1] = spawner;
+            }
+        }
+        CallNextWave();
     }
-
     // Update is called once per frame
     void Update()
     {
+        if (wave > 0){
+            if (timeTillNextWave > 0){
+                timeTillNextWave -= Time.deltaTime;
+            }
+            else{
+                CallNextWave();
+            }
+        }
         if(Input.GetKeyDown(KeyCode.Alpha1)){
             Time.timeScale = 1;
         }
@@ -31,11 +64,88 @@ public class GameMaster : MonoBehaviour
                 Time.timeScale = 1;
             }
         }
+        if(Input.GetKeyDown("p")){
+            if (placing == false){
+             Instantiate(tower, Camera.main.ScreenToWorldPoint(Input.mousePosition) , Quaternion.Euler(0, 0, 0), this.gameObject.transform);
+                placing = true;
+            foreach (Transform child in gameObject.transform){
+            if(child.gameObject.tag == "Tower"){
+                towerPlaced = child.gameObject;
+                personalSpace = towerPlaced.GetComponent<CircleCollider2D>().radius;
+                towerPlaced.GetComponent<CircleCollider2D>().enabled = false;
+                cost = towerPlaced.GetComponent<TowerBasic>().price;
+                towerPlaced.transform.parent = null;
+                towerPlaced.transform.Find("TowerUI").gameObject.active = true;
+                spriteRenderer = towerPlaced.transform.Find("TowerUI").gameObject.GetComponent<SpriteRenderer>();
+            }
+        }
+    }
+    }
+    if (placing && towerPlaced != null){
+        spriteRenderer.color = new Color(1f, 1f, 1f, 0.25f);
+        canPlace = true;
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        towerPlaced.transform.position = new Vector3 (mousePos.x, mousePos.y, 0);
+        obstacle = Physics2D.CircleCast(towerPlaced.transform.position, personalSpace, new Vector2(0, 0), 0);
+        if (obstacle.collider != null || money - cost < 0){
+            canPlace = false;
+            spriteRenderer.color = new Color(1f, 0f, 0f, 0.25f);
+        }
+       if (Input.GetMouseButtonDown(0)){
+        if (canPlace == true){
+            towerPlaced.GetComponent<TowerBasic>().enabled = true;
+            towerPlaced.GetComponent<CircleCollider2D>().enabled = true;
+            towerPlaced.GetComponent<TowerBasic>().towerDeselect();
+            money -= cost;
+            towerPlaced = null;
+            placing = false;
+            }
+        }
+        if(Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape)){
+            Destroy(towerPlaced);
+            placing = false;
+            cost = 0;
+        }
+    }
     }
    public void loseLives(int lost){
     lives -= lost;
     if(lives <= 0){
         Time.timeScale = 0;
     }
+   }
+   public void CallNextWave(){
+        wave += 1;
+        bool currentWave = false;
+        StreamReader f = new StreamReader("Assets/Resources/WavesInfo/Level"+level+".txt");
+        Debug.Log("File read");
+        List<string> lines = f.ReadToEnd().Split("\n").ToList();
+        foreach(string line in lines){
+            if(line.StartsWith("#")){
+                if(System.Int32.TryParse(line.Replace("#", ""), out int cWave)){
+                    Debug.Log("Wave" + wave);
+                    if(cWave == wave){
+                        currentWave = true;
+                    }
+                    else{
+                        currentWave = false;
+                    }
+                }
+            }
+            else if (currentWave){
+                enemies.Add(Resources.Load("Enemies/" +line.Split()[0], typeof(GameObject)) as GameObject);
+                count.Add(System.Int32.Parse(line.Split()[1]));
+                spawnTime.Add(float.Parse(line.Split()[2]));
+                spawnPoint.Add(System.Int32.Parse(line.Split()[3]));
+            }
+        }
+        for (int i = 0; i < spawnPoint.Count; i++){
+            spawners[spawnPoint[i]-1].GetComponent<EnemySpawnerScript>().enemies.Add(enemies[i]);
+            spawners[spawnPoint[i]-1].GetComponent<EnemySpawnerScript>().spawnTime.Add(spawnTime[i]);
+            spawners[spawnPoint[i]-1].GetComponent<EnemySpawnerScript>().count.Add(count[i]);
+        }
+        foreach(GameObject spawner in spawners){
+            spawner.GetComponent<EnemySpawnerScript>().StartSummoning();
+        }
    }
 }

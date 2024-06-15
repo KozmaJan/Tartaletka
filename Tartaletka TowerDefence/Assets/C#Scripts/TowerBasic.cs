@@ -14,8 +14,16 @@ public class TowerBasic : MonoBehaviour
      public bool canShoot = true;
      public float cooldown= 0.75f;
     private Vector3 castDir;
+    public int price = 10;
+    private SpriteRenderer rangeIndicator;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        rangeIndicator = gameObject.transform.Find("TowerUI").gameObject.GetComponent<SpriteRenderer>();
+        rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
+        rangeIndicator.color = new Color(1f, 1f, 1f, 0.25f);
+    }
     void Start()
     {
         enemyLayer = LayerMask.GetMask("Enemy");
@@ -63,4 +71,12 @@ void OnDrawGizmos(){
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(this.gameObject.transform.position, range);
     }
+public void towerSelect(){
+    rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
+    rangeIndicator.color = new Color(1f, 1f, 1f, 0.25f);
+}
+public void towerDeselect(){
+    rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
+    rangeIndicator.color = new Color(1f, 1f, 1f, 0f);
+}
 }

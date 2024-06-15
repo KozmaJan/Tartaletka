@@ -386,6 +386,7 @@
 -analyzer:"C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/C#Scripts/TowerBasic.cs"
 "Assets/EnemyScript.cs"
+"Assets/EnemySpawnerScript.cs"
 "Assets/Finnish.cs"
 "Assets/GameMaster.cs"
 "Assets/ProjectileScript.cs"
