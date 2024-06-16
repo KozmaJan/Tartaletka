@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour
 { 
@@ -25,8 +26,17 @@ public class GameMaster : MonoBehaviour
     public float timeTillNextWave = 10000;
     public int wave = 0;
     private int level = 1;
+    private GameObject selected;
+    private Text txtLives;
+    private Text txtMoney;
+    private GameObject UI;
     // Start is called before the first frame update
     void Start(){
+        UI = GameObject.Find("UI");
+        txtLives = UI.transform.Find("Lives").GetComponent<Text>();
+        txtLives.text = lives.ToString();
+        txtMoney = UI.transform.Find("Money").GetComponent<Text>();
+        txtMoney.text = money.ToString();
         spawners = GameObject.FindGameObjectsWithTag("Spawner").ToList(); 
         List<GameObject> tempList = GameObject.FindGameObjectsWithTag("Spawner").ToList();
         foreach(GameObject spawner in tempList){
@@ -39,11 +49,12 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        txtMoney.text = money.ToString();
         if (wave > 0){
             if (timeTillNextWave > 0){
                 timeTillNextWave -= Time.deltaTime;
             }
-            else{
+            else if (timeTillNextWave <= 0){
                 CallNextWave();
             }
         }
@@ -64,8 +75,25 @@ public class GameMaster : MonoBehaviour
                 Time.timeScale = 1;
             }
         }
+        if (Input.GetMouseButtonDown(0) && !placing) {    
+			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			RaycastHit2D hit = Physics2D.Raycast(new Vector2(mousePos.x, mousePos.y), Vector2.zero);
+            if (hit.collider != null){
+                selected = hit.collider.gameObject;
+			if (selected.tag == "Tower") {
+				selected.GetComponent<TowerBasic>().towerSelect();
+			} 
+            }
+            else if (selected!=null){
+                if (selected.tag == "Tower") {
+                    selected.GetComponent<TowerBasic>().towerDeselect();
+                }
+                selected = null;
+            } 
+		}
         if(Input.GetKeyDown("p")){
             if (placing == false){
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
              Instantiate(tower, Camera.main.ScreenToWorldPoint(Input.mousePosition) , Quaternion.Euler(0, 0, 0), this.gameObject.transform);
                 placing = true;
             foreach (Transform child in gameObject.transform){
@@ -84,7 +112,6 @@ public class GameMaster : MonoBehaviour
     if (placing && towerPlaced != null){
         spriteRenderer.color = new Color(1f, 1f, 1f, 0.25f);
         canPlace = true;
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         towerPlaced.transform.position = new Vector3 (mousePos.x, mousePos.y, 0);
         obstacle = Physics2D.CircleCast(towerPlaced.transform.position, personalSpace, new Vector2(0, 0), 0);
         if (obstacle.collider != null || money - cost < 0){
@@ -110,6 +137,7 @@ public class GameMaster : MonoBehaviour
     }
    public void loseLives(int lost){
     lives -= lost;
+     txtLives.text = lives.ToString();
     if(lives <= 0){
         Time.timeScale = 0;
     }
@@ -120,12 +148,14 @@ public class GameMaster : MonoBehaviour
         StreamReader f = new StreamReader("Assets/Resources/WavesInfo/Level"+level+".txt");
         Debug.Log("File read");
         List<string> lines = f.ReadToEnd().Split("\n").ToList();
+        f.Close();
         foreach(string line in lines){
             if(line.StartsWith("#")){
-                if(System.Int32.TryParse(line.Replace("#", ""), out int cWave)){
+                if(System.Int32.TryParse(line.Split()[0].Replace("#", ""), out int cWave)){
                     Debug.Log("Wave" + wave);
                     if(cWave == wave){
                         currentWave = true;
+                        timeTillNextWave = float.Parse(line.Split()[1]); 
                     }
                     else{
                         currentWave = false;
