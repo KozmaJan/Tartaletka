@@ -384,13 +384,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/C#Scripts/EnemyScript.cs"
+"Assets/C#Scripts/EnemySpawnerScript.cs"
+"Assets/C#Scripts/Finnish.cs"
+"Assets/C#Scripts/GameMaster.cs"
+"Assets/C#Scripts/ProjectileScript.cs"
 "Assets/C#Scripts/TowerBasic.cs"
-"Assets/EnemyScript.cs"
-"Assets/EnemySpawnerScript.cs"
-"Assets/Finnish.cs"
-"Assets/GameMaster.cs"
-"Assets/ProjectileScript.cs"
-"Assets/WaypointInfo.cs"
+"Assets/C#Scripts/WaypointInfo.cs"
 -langversion:9.0
 
 /deterministic
