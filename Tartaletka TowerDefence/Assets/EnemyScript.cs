@@ -15,13 +15,6 @@ public class EnemyScript : MonoBehaviour
     public int damage = 1;
     public Rigidbody2D ownRb;
     public float distanceTraveled;
-    public int bounty = 10; //Money recieved after slaying a foe
-    [Header("Effects")]
-    public float slow = 0f; //O kolik se danná jednotka zpomalí
-    public float slowTime = 0;
-    public float drain = 0f; //Pro efekty jako je jed a krvácení
-    public float drainTime = 0;
-    public float freezeTime = 0f; //Pokudd se má nepřítel zpomalit
     void Start()
     {
         ownRb = gameObject.GetComponent<Rigidbody2D>();
@@ -36,24 +29,11 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (freezeTime > 0){
-            freezeTime = freezeTime - Time.deltaTime;
-        }
-        if (drainTime > 0){
-            drainTime = drainTime - Time.deltaTime;
-            TakeHit(drain*Time.deltaTime);
-        }
-        if(slowTime > 0){
-            slowTime = slowTime - Time.deltaTime;
-        }
-        else{
-            slow = 0;
-        }
         if (target != null){
         Dir = target.position.position - this.gameObject.transform.position;
         Dir.Normalize();
-        ownRb.MovePosition(ownRb.position + new Vector2(Dir.x, Dir.y) * moveSpeed * Time.deltaTime *(1f-slow));
-        distanceTraveled += (new Vector2(Dir.x, Dir.y) * moveSpeed * Time.deltaTime * (1-slow)).magnitude;
+        ownRb.MovePosition(ownRb.position + new Vector2(Dir.x, Dir.y) * moveSpeed * Time.deltaTime);
+        distanceTraveled += (new Vector2(Dir.x, Dir.y) * moveSpeed * Time.deltaTime).magnitude;
         if((Vector3.Distance(target.position.position, gameObject.transform.position)<Vector3.Distance(new Vector3(0, 0, 0), Dir*moveSpeed *Time.deltaTime))&& target.order == currentWP){
             currentWP += 1;
             NextWaypoint();
@@ -75,21 +55,7 @@ public class EnemyScript : MonoBehaviour
     public void TakeHit(float damage){
         health -= damage;
         if(health <= 0){
-            GameObject.Find("GameManager").GetComponent<GameMaster>().money += bounty;
             Destroy(gameObject);
-        }
-    }
-    public void ApplyEffects(float toSlow = 0f, float toDrain = 0f, float toFreezeTime = 1, float toSlowTime = 2.5f, float toDrainTime = 3f){
-        if (slow <= toSlow){
-            slow = toSlow;
-            slowTime = toSlowTime;
-        }
-        if (drain <= toDrain){
-            drain = toDrain;
-            drainTime = toDrainTime;
-        }
-        if (freezeTime == 0){
-            freezeTime = toFreezeTime;
         }
     }
 }

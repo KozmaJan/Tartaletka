@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using System.Linq;
 
 public class TowerBasic : MonoBehaviour
 {
@@ -11,7 +9,6 @@ public class TowerBasic : MonoBehaviour
      private static RaycastHit2D[] enemies;
      private Vector3 position;
      public GameObject target = null;
-     public string id = "00"; //tower id for upgrades
      private float maxDistance; 
      private LayerMask enemyLayer;
      public bool canShoot = true;
@@ -19,8 +16,6 @@ public class TowerBasic : MonoBehaviour
     private Vector3 castDir;
     public int price = 10;
     private SpriteRenderer rangeIndicator;
-    public List<string> upgrades = new List<string>();
-    public List<int> prices = new List<int>();
 
     // Start is called before the first frame update
     void Awake()
@@ -33,7 +28,6 @@ public class TowerBasic : MonoBehaviour
     {
         enemyLayer = LayerMask.GetMask("Enemy");
         position = this.gameObject.transform.position;
-        GetUpgrades();
     }
 
     // Update is called once per frame
@@ -65,8 +59,7 @@ public class TowerBasic : MonoBehaviour
             foreach (Transform child in gameObject.transform){
             if(child.gameObject.GetComponent<ProjectileScript>()){
                 child.gameObject.GetComponent<ProjectileScript>().target = target.transform;
-                child.gameObject.SetActive(true);
-                child.parent = null;
+                child.parent = null!;
             }
             }
             }
@@ -79,68 +72,11 @@ void OnDrawGizmos(){
         Gizmos.DrawWireSphere(this.gameObject.transform.position, range);
     }
 public void towerSelect(){
-    rangeIndicator.gameObject.SetActive(true);
     rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
     rangeIndicator.color = new Color(1f, 1f, 1f, 0.25f);
-    Upgrade();
 }
 public void towerDeselect(){
     rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
     rangeIndicator.color = new Color(1f, 1f, 1f, 0f);
 }
-public void Upgrade(int index = 1){
-    if (GameObject.Find("GameManager").GetComponent<GameMaster>().money - prices[index-1] >= 0 ){
-    GameObject.Find("GameManager").GetComponent<GameMaster>().money -= prices[index-1];
-    string[] upgradeData = upgrades[index-1].Split();
-    id = upgradeData[0];
-    range = float.Parse(upgradeData[2]);
-    cooldown = float.Parse(upgradeData[3]);
-    Instantiate(projectile, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, -100), Quaternion.Euler(0,0,Mathf.Atan2(castDir.y, castDir.x) * Mathf.Rad2Deg + 90f), this.gameObject.transform);
-    Destroy(projectile);
-    foreach (Transform child in gameObject.transform){
-            if(child.gameObject.GetComponent<ProjectileScript>()){
-                projectile = child.gameObject;
-                projectile.SetActive(false);
-                projectile.transform.parent = null;
-            }
-    }
-    ProjectileScript projectileData = projectile.GetComponent<ProjectileScript>();
-    projectileData.damage = System.Int32.Parse(upgradeData[4]);
-    projectileData.slow = float.Parse(upgradeData[6]);
-    projectileData.slowTime = float.Parse(upgradeData[7]);
-    projectileData.drain = float.Parse(upgradeData[8]);
-    projectileData.drainTime = float.Parse(upgradeData[9]);
-    projectileData.freezeTime = float.Parse(upgradeData[11]);
-    projectileData.moveSpeed = float.Parse(upgradeData[12]);
-    projectileData.range = float.Parse(upgradeData[13]);
-    projectileData.splash = false;
-    projectileData.aoe = false;
-    if(upgradeData[5] == "t"){
-        projectileData.splash = true;
-    }
-    if(upgradeData[10] == "t"){
-        projectileData.aoe = true;
-    }
-    GetUpgrades();
-    }
-}
-    public void GetUpgrades(){
-        upgrades.Clear();
-        prices.Clear();
-        StreamReader f = new StreamReader("Assets/Resources/Upgrades.txt");
-        List<string> lines = f.ReadToEnd().Split("\n").ToList();
-        f.Close();
-        List<string> upgradesId = new List<string>();
-        foreach (string line in lines){
-            if (line.StartsWith(id+":")){
-                upgradesId = line.Split(" ").ToList();
-                Debug.Log(upgradesId[1]);
-                upgradesId.RemoveAt(0);
-            }
-            if (upgradesId.Contains(line.Split()[0])){
-                upgrades.Add(line);
-                prices.Add(System.Int32.Parse(line.Split(" ")[1]));
-            }
-        }
-    }
 }

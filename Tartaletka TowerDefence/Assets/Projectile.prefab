@@ -47,17 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  damage: 10
+  damage: 5
   ownRb: {fileID: 0}
-  moveSpeed: 50
-  splash: 0
-  aoe: 0
-  range: 10
-  slow: 0
-  slowTime: 0
-  drain: 0
-  drainTime: 0
-  freezeTime: 0
+  moveSpeed: 30
 --- !u!50 &-2498422954006032836
 Rigidbody2D:
   serializedVersion: 4
