@@ -21,6 +21,7 @@ public class TowerBasic : MonoBehaviour
     private SpriteRenderer rangeIndicator;
     public List<string> upgrades = new List<string>();
     public List<int> prices = new List<int>();
+    public GameObject upgradeUI;
 
     // Start is called before the first frame update
     void Awake()
@@ -31,6 +32,8 @@ public class TowerBasic : MonoBehaviour
     }
     void Start()
     {
+        upgradeUI = gameObject.transform.Find("UpgradeUI").gameObject;
+        upgradeUI.SetActive(false);
         enemyLayer = LayerMask.GetMask("Enemy");
         position = this.gameObject.transform.position;
         GetUpgrades();
@@ -80,13 +83,15 @@ void OnDrawGizmos(){
     }
 public void towerSelect(){
     rangeIndicator.gameObject.SetActive(true);
+    upgradeUI.SetActive(true);
     rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
     rangeIndicator.color = new Color(1f, 1f, 1f, 0.25f);
-    Upgrade();
+    //Upgrade();
 }
 public void towerDeselect(){
     rangeIndicator.gameObject.transform.localScale = new Vector3(range * 1.55f, range * 1.55f, 0f);
     rangeIndicator.color = new Color(1f, 1f, 1f, 0f);
+    upgradeUI.SetActive(false);
 }
 public void Upgrade(int index = 1){
     if (GameObject.Find("GameManager").GetComponent<GameMaster>().money - prices[index-1] >= 0 ){
@@ -122,6 +127,7 @@ public void Upgrade(int index = 1){
         projectileData.aoe = true;
     }
     GetUpgrades();
+    towerDeselect();
     }
 }
     public void GetUpgrades(){

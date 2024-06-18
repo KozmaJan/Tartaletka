@@ -1409,10 +1409,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 649818247239892318, guid: e41c956054d46aa43b88277075148102, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2769671234328900964, guid: e41c956054d46aa43b88277075148102, type: 3}
       propertyPath: m_Name
       value: Tower
@@ -2691,11 +2687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927599154987199815, guid: e41c956054d46aa43b88277075148102, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.89
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 5927599154987199815, guid: e41c956054d46aa43b88277075148102, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.21
+      value: 1.41
       objectReference: {fileID: 0}
     - target: {fileID: 5927599154987199815, guid: e41c956054d46aa43b88277075148102, type: 3}
       propertyPath: m_LocalPosition.z

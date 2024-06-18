@@ -82,7 +82,10 @@ public class GameMaster : MonoBehaviour
                 selected = hit.collider.gameObject;
 			if (selected.tag == "Tower") {
 				selected.GetComponent<TowerBasic>().towerSelect();
-			} 
+			}
+            else if (selected.tag == "UpgradeButton"){
+                selected.transform.parent.transform.parent.GetComponent<TowerBasic>().Upgrade(System.Int32.Parse(selected.name.Replace("Upgrade", "")));
+            }
             }
             else if (selected!=null){
                 if (selected.tag == "Tower") {

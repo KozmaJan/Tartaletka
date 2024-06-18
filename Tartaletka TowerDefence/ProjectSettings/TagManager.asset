@@ -8,6 +8,7 @@ TagManager:
   - Tower
   - Enemy
   - Spawner
+  - UpgradeButton
   layers:
   - Default
   - TransparentFX

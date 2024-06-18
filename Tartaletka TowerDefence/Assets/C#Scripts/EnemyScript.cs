@@ -58,6 +58,7 @@ public class EnemyScript : MonoBehaviour
             currentWP += 1;
             NextWaypoint();
         }
+        transform.rotation = Quaternion.Euler(0, (Dir.x > 0) ? 0 : 180, 0);
         }
     }
     void NextWaypoint(){
