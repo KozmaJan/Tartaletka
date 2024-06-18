@@ -9,5 +9,11 @@ public class WaypointInfo : MonoBehaviour
    public Transform position;
    void Awake(){
       position = this.gameObject.transform;
+      if(System.Int32.TryParse(gameObject.name.Replace("Waypoint (","").Replace(")", ""), out int ord)){
+         order = ord;
+      }
+      if(System.Int32.TryParse(gameObject.transform.parent.gameObject.name.Replace("Path",""), out int grp)){
+         group = grp;
+      }
    }
 }

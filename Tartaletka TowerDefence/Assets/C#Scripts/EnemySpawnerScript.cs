@@ -22,8 +22,12 @@ public class EnemySpawnerScript : MonoBehaviour
     }
     IEnumerator SummonEnemy()
     {
-        yield return new WaitForSeconds(spawnTime[0]);
-        Instantiate(enemies[0], position, Quaternion.Euler(0, 0, 0), null);
+        yield return new WaitForSeconds(spawnTime[0] * (2 - Time.timeScale));
+        Instantiate(enemies[0], position, Quaternion.Euler(0, 0, 0), gameObject.transform);
+        foreach(Transform child in gameObject.transform){
+            child.gameObject.GetComponent<EnemyScript>().group = index;
+            child.parent = null;
+        }
         if(count[0] <= 0){
             enemies.RemoveAt(0);
             count.RemoveAt(0);

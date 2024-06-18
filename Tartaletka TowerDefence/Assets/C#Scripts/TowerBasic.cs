@@ -37,6 +37,7 @@ public class TowerBasic : MonoBehaviour
         enemyLayer = LayerMask.GetMask("Enemy");
         position = this.gameObject.transform.position;
         GetUpgrades();
+        towerDeselect();
     }
 
     // Update is called once per frame
@@ -74,7 +75,7 @@ public class TowerBasic : MonoBehaviour
             }
             }
     IEnumerator fireCooldown(){
-  yield return new WaitForSeconds(cooldown);
+  yield return new WaitForSeconds(cooldown * (2 - Time.timeScale));
   canShoot = true;
 }
 void OnDrawGizmos(){

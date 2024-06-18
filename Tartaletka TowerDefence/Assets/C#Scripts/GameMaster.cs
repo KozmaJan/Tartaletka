@@ -75,8 +75,8 @@ public class GameMaster : MonoBehaviour
                 Time.timeScale = 1;
             }
         }
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButtonDown(0) && !placing) {    
-			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(mousePos.x, mousePos.y), Vector2.zero);
             if (hit.collider != null){
                 selected = hit.collider.gameObject;
@@ -96,11 +96,11 @@ public class GameMaster : MonoBehaviour
 		}
         if(Input.GetKeyDown("p")){
             if (placing == false){
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
              Instantiate(tower, Camera.main.ScreenToWorldPoint(Input.mousePosition) , Quaternion.Euler(0, 0, 0), this.gameObject.transform);
                 placing = true;
             foreach (Transform child in gameObject.transform){
             if(child.gameObject.tag == "Tower"){
+                Debug.Log("Placing");
                 towerPlaced = child.gameObject;
                 personalSpace = towerPlaced.GetComponent<CircleCollider2D>().radius;
                 towerPlaced.GetComponent<CircleCollider2D>().enabled = false;
@@ -123,12 +123,12 @@ public class GameMaster : MonoBehaviour
         }
        if (Input.GetMouseButtonDown(0)){
         if (canPlace == true){
+            Debug.Log("Placed");
             towerPlaced.GetComponent<TowerBasic>().enabled = true;
             towerPlaced.GetComponent<CircleCollider2D>().enabled = true;
-            towerPlaced.GetComponent<TowerBasic>().towerDeselect();
-            money -= cost;
-            towerPlaced = null;
             placing = false;
+            towerPlaced = null;
+            money -= cost;
             }
         }
         if(Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape)){
