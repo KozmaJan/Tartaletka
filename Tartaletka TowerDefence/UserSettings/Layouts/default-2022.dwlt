@@ -120,10 +120,14 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 130
 =======
   controlID: 49
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+  controlID: 19563
+>>>>>>> parent of 02055277 (Do not touch!)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,19 +148,27 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1212
 =======
     width: 1210.4
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    width: 1207.2
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 730.8
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 51
 =======
   controlID: 50
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+  controlID: 19564
+>>>>>>> parent of 02055277 (Do not touch!)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,19 +189,27 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1212
 =======
     width: 1210.4
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    width: 1207.2
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 511.2
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 52
 =======
   controlID: 51
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+  controlID: 19565
+>>>>>>> parent of 02055277 (Do not touch!)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,13 +228,17 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 368
 =======
     width: 368.8
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    width: 366.4
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 511.2
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -232,11 +256,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 368
     y: 0
@@ -246,18 +271,27 @@ MonoBehaviour:
     y: 0
     width: 841.60004
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    x: 366.4
+    y: 0
+    width: 840.7999
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 511.2
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 16}
   m_Panes:
+<<<<<<< HEAD
   - {fileID: 16}
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 02055277 (Do not touch!)
   - {fileID: 12}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
+  - {fileID: 16}
+  m_Selected: 4
   m_LastSelected: 0
 =======
   - {fileID: 17}
@@ -277,13 +311,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 511.2
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1212
 =======
@@ -293,11 +328,18 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
+=======
+    width: 1207.2
+    height: 219.59998
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
+>>>>>>> parent of 02055277 (Do not touch!)
   m_Panes:
   - {fileID: 12}
   - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,6 +356,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1212
     y: 0
     width: 324
@@ -322,6 +365,11 @@ MonoBehaviour:
     y: 0
     width: 325.59998
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    x: 1207.2
+    y: 0
+    width: 328.80005
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 730.8
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -351,9 +399,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 368
+=======
+    x: 366.4
+>>>>>>> parent of 02055277 (Do not touch!)
     y: 73.6
-    width: 842
+    width: 838.7999
     height: 490.2
 =======
     x: 0
@@ -378,7 +430,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1052.5, y: 586.5}
+  m_TargetSize: {x: 1048.4999, y: 586.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -393,8 +445,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -421
-    m_HBaseRangeMax: 421
+    m_HBaseRangeMin: -419.39996
+    m_HBaseRangeMax: 419.39996
     m_VBaseRangeMin: -234.6
     m_VBaseRangeMax: 234.6
     m_HAllowExceedBaseRangeMin: 1
@@ -402,10 +454,10 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -414,23 +466,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 842
+      width: 838.7999
       height: 469.2
     m_Scale: {x: 1.1592737, y: 1.1592737}
-    m_Translation: {x: 462.88904, y: 241.54437}
+    m_Translation: {x: 461.289, y: 241.54437}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -399.29227
+      x: -397.91205
       y: -208.35835
-      width: 726.31683
+      width: 723.5564
       height: 404.73618
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1052.5, y: 612.75}
+  m_LastWindowPixelSize: {x: 1048.4999, y: 612.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -574,10 +626,14 @@ MonoBehaviour:
     x: 0
     y: 73.6
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 367
 =======
     width: 367.8
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    width: 365.4
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 490.2
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -593,6 +649,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 98faffff
@@ -601,6 +658,11 @@ MonoBehaviour:
       m_LastClickedID: -1312
       m_ExpandedIDs: 16fbffff
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 865cffffbefaffff16fbffff
+>>>>>>> parent of 02055277 (Do not touch!)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -644,10 +706,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73.6
-    width: 365.4
-    height: 490.2
+    x: 1.6
+    y: 81.6
+    width: 227.8
+    height: 407.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -680,7 +742,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 365.4
+    width: 359.8
     height: 490.2
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -740,6 +802,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 368
     y: 73.6
     width: 842
@@ -748,6 +811,11 @@ MonoBehaviour:
     y: 73.6
     width: 839.60004
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    x: 366.4
+    y: 73.6
+    width: 838.7999
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 490.2
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1121,6 +1189,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 3.0047047, y: 0.6642196, z: 848.8628}
@@ -1129,6 +1198,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -5.07271, y: 3.2378387, z: 0.013772523}
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    m_Target: {x: 0, y: 0, z: 90}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 90}
+>>>>>>> parent of 02055277 (Do not touch!)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1179,6 +1253,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 6.1449738
@@ -1187,6 +1262,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 8.622756
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    m_Target: 10.242016
+    speed: 2
+    m_Value: 10.242016
+>>>>>>> parent of 02055277 (Do not touch!)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1329,9 +1409,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 368
+    x: 360
     y: 73.6
-    width: 842
+    width: 819.6
     height: 490.2
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1473,7 +1553,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 584.8
-    width: 1211
+    width: 1206.2
     height: 198.59998
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1512,9 +1592,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f46e0000
     m_LastClickedID: 28404
     m_ExpandedIDs: 00000000f46e0000f66e0000f86e0000
+=======
+    m_SelectedIDs: be6e0000
+    m_LastClickedID: 28350
+    m_ExpandedIDs: 00000000be6e0000c06e0000c26e0000
+>>>>>>> parent of 02055277 (Do not touch!)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1542,7 +1628,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f46e0000f66e0000f86e0000
+=======
+    m_ExpandedIDs: 00000000be6e0000c06e0000c26e0000
+>>>>>>> parent of 02055277 (Do not touch!)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1567,10 +1657,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000a87000002c770000fa700000c6760000a876000014890000ee920000f292000068770000b2780000c6880000b8780000a8780000f0780000c87a0000b87a0000a678000040a50000feb2000098740000008a00009c7400000c70000098700000c46e0000ac6e0000
+=======
+    m_SelectedInstanceIDs: befaffff
+    m_LastClickedInstanceID: -1346
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000a87000002c770000fa700000c6760000a876000014890000ee920000f292000068770000b2780000c6880000b8780000a8780000f0780000c87a0000b87a0000a678000040a50000feb2000098740000008a00009c7400000c700000
+>>>>>>> parent of 02055277 (Do not touch!)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1594,7 +1691,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 61.400024}
+=======
+    m_ScrollPosition: {x: 0, y: 92}
+>>>>>>> parent of 02055277 (Do not touch!)
     m_GridSize: 67
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -1623,10 +1724,14 @@ MonoBehaviour:
     x: 0
     y: 584.8
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1211
 =======
     width: 1209.4
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    width: 1206.2
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 198.59998
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1659,6 +1764,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1212
     y: 73.6
     width: 323
@@ -1667,6 +1773,11 @@ MonoBehaviour:
     y: 73.6
     width: 324.59998
 >>>>>>> parent of 971415ca (Almosr goddam done)
+=======
+    x: 1207.2001
+    y: 73.6
+    width: 327.80005
+>>>>>>> parent of 02055277 (Do not touch!)
     height: 709.8
   m_SerializedDataModeController:
     m_DataMode: 0
