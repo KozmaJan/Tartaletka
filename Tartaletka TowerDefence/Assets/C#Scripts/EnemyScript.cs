@@ -22,8 +22,10 @@ public class EnemyScript : MonoBehaviour
     public float drain = 0f; //Pro efekty jako je jed a krvácení
     public float drainTime = 0;
     public float freezeTime = 0f; //Pokudd se má nepřítel zpomalit
+    private GameMaster gameMaster;
     void Start()
     {
+        gameMaster = GameObject.Find("GameManager").GetComponent<GameMaster>();
         ownRb = gameObject.GetComponent<Rigidbody2D>();
         GameObject[] waypointsObjects = GameObject.FindGameObjectsWithTag("waypoint");
         foreach(GameObject waypoint in waypointsObjects){
@@ -76,9 +78,13 @@ public class EnemyScript : MonoBehaviour
     public void TakeHit(float damage){
         health -= damage;
         if(health <= 0){
-            GameObject.Find("GameManager").GetComponent<GameMaster>().money += bounty;
-            Destroy(gameObject);
+            gameMaster.SubtractEnemies();
         }
+    }
+    public void Die(){
+            gameMaster.money += bounty;
+            Die();
+            Destroy(gameObject);
     }
     public void ApplyEffects(float toSlow = 0f, float toDrain = 0f, float toFreezeTime = 1, float toSlowTime = 2.5f, float toDrainTime = 3f){
         if (slow <= toSlow){

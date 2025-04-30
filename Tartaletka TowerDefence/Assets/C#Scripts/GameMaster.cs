@@ -30,6 +30,8 @@ public class GameMaster : MonoBehaviour
     private Text txtLives;
     private Text txtMoney;
     private GameObject UI;
+    public bool lastWave = false;
+    public float enemyCount;
     // Start is called before the first frame update
     void Start(){
         UI = GameObject.Find("UI");
@@ -148,8 +150,8 @@ public class GameMaster : MonoBehaviour
    public void CallNextWave(){
         wave += 1;
         bool currentWave = false;
+        lastWave = true;
         StreamReader f = new StreamReader("Assets/Resources/WavesInfo/Level"+level+".txt");
-        Debug.Log("File read");
         List<string> lines = f.ReadToEnd().Split("\n").ToList();
         f.Close();
         foreach(string line in lines){
@@ -159,6 +161,7 @@ public class GameMaster : MonoBehaviour
                     if(cWave == wave){
                         currentWave = true;
                         timeTillNextWave = float.Parse(line.Split()[1]); 
+                        lastWave = false;
                     }
                     else{
                         currentWave = false;
@@ -180,5 +183,26 @@ public class GameMaster : MonoBehaviour
         foreach(GameObject spawner in spawners){
             spawner.GetComponent<EnemySpawnerScript>().StartSummoning();
         }
+        enemies.Clear();
+        count.Clear();
+        spawnPoint.Clear();
+        spawnTime.Clear();
+   }
+   public void SubtractEnemies(){
+    enemyCount -= 1;
+    if (enemyCount == 0){
+        if(lastWave){
+            EndGame();
+        }
+    }
+   }
+   public void EndGame(){
+    if (lives > 0){
+        Debug.Log("Victory!!!");
+    }
+    else{
+        Debug.Log("Defeat.");
+    }
+    Time.timeScale = 0;
    }
 }

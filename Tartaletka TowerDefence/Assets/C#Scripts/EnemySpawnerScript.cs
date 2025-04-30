@@ -22,7 +22,7 @@ public class EnemySpawnerScript : MonoBehaviour
     }
     IEnumerator SummonEnemy()
     {
-        yield return new WaitForSeconds(spawnTime[0] * (2 - Time.timeScale));
+        yield return new WaitForSeconds(spawnTime[0]);
         Instantiate(enemies[0], position, Quaternion.Euler(0, 0, 0), gameObject.transform);
         foreach(Transform child in gameObject.transform){
             child.gameObject.GetComponent<EnemyScript>().group = index;

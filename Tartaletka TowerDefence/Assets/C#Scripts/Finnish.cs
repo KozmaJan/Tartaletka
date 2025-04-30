@@ -25,7 +25,7 @@ public class Finnish : MonoBehaviour
         Debug.Log(enemy);
         if (enemy.collider.transform.gameObject.GetComponent<EnemyScript>() != null){
             gameMaster.loseLives(enemy.collider.transform.gameObject.GetComponent<EnemyScript>().damage);
-           Destroy(enemy.collider.transform.gameObject);
+            enemy.collider.transform.gameObject.GetComponent<EnemyScript>().Die();
        }
        }
     }
