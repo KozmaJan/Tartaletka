@@ -34,5 +34,10 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
+  leftDir: {x: 0, y: 0, z: 0}
+  rightDir: {x: 0, y: 0, z: 0}
+  leftlane: {x: -0.125, y: 0.075, z: 0}
+  rightlane: {x: 0.125, y: -0.075, z: 0}
   m_size: {x: 1, y: 1}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: -631759759, guid: 66efc7282493ba34799928af54ed444c, type: 3}

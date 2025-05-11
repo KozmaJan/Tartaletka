@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Terrain
+    uniqueID: 3474819067
+    locked: 0
+  - name: Props
+    uniqueID: 2445300687
+    locked: 0
