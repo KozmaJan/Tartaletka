@@ -1,0 +1,585 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'cs' Physical Memory: 16263 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\janko\Nová složka\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+29840
+Successfully changed project path to: C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27132] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1531854067 [EditorId] 1531854067 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UFP758L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27132] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1531854067 [EditorId] 1531854067 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UFP758L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 66.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     8131 MB
+    Driver:   31.0.101.2130
+Initialize mono
+Mono path[0] = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.052018 seconds.
+- Loaded All Assemblies, in  1.515 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.106 seconds
+Domain Reload Profiling: 2607ms
+	BeginReloadAssembly (472ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (132ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (293ms)
+	LoadAllAssembliesAndSetupDomain (559ms)
+		LoadAssemblies (461ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (548ms)
+			TypeCache.Refresh (544ms)
+				TypeCache.ScanAssembly (495ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1108ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (879ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (34ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (579ms)
+			ProcessInitializeOnLoadMethodAttributes (202ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\janko\OneDrive\Dokumenty\GitHub\Tartaletka\AlgoTown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\janko\OneDrive\Dokumenty\GitHub\Tartaletka\AlgoTown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.939 seconds
+Refreshing native plugins compatible for Editor in 53.74 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.499 seconds
+Domain Reload Profiling: 6415ms
+	BeginReloadAssembly (632ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (179ms)
+	RebuildNativeTypeToScriptingClass (52ms)
+	initialDomainReloadingComplete (194ms)
+	LoadAllAssembliesAndSetupDomain (2857ms)
+		LoadAssemblies (2339ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (914ms)
+			TypeCache.Refresh (741ms)
+				TypeCache.ScanAssembly (645ms)
+			ScanForSourceGeneratedMonoScriptInfo (141ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2501ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1615ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (251ms)
+			ProcessInitializeOnLoadAttributes (1162ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
+			AfterProcessingInitializeOnLoad (43ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.51 seconds
+Refreshing native plugins compatible for Editor in 41.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4003 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (198.5 KB). Loaded Objects now: 4461.
+Memory consumption went from 136.0 MB to 135.8 MB.
+Total: 10.376600 ms (FindLiveObjects: 0.558400 ms CreateObjectMapping: 0.675300 ms MarkObjects: 8.708400 ms  DeleteObjects: 0.432700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 455330.191470 seconds.
+  path: Assets/CarScript.cs
+  artifactKey: Guid(607906dc7b94eab4483b366b6ef61a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CarScript.cs using Guid(607906dc7b94eab4483b366b6ef61a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6017b28990b4f58c33c10e46ed9aa52e') in 0.003840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 779.096132 seconds.
+  path: Assets/Resources/Sprites/TerrainPallete.prefab
+  artifactKey: Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TerrainPallete.prefab using Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52153f5fbab8c2dd99de99a63d8bf256') in 0.355354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 87.249462 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_0.asset
+  artifactKey: Guid(236e8f061d2525d44b0686c3a2b0fbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_0.asset using Guid(236e8f061d2525d44b0686c3a2b0fbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28284e628f17e925acaf3841e97c6893') in 0.046024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001814 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_8.asset
+  artifactKey: Guid(63c7d0846964fbb49a6618e2a1bfbfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_8.asset using Guid(63c7d0846964fbb49a6618e2a1bfbfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504b2bc57e33e6b42e764f0fd5e45911') in 0.017223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001117 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_14.asset
+  artifactKey: Guid(c96854248accd3c4d8138a5679067638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_14.asset using Guid(c96854248accd3c4d8138a5679067638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19afe0883af510b70df76adda6aa1bb') in 0.015060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001204 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_20.asset
+  artifactKey: Guid(364c49448c90e7f42834e549fb58b6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_20.asset using Guid(364c49448c90e7f42834e549fb58b6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e3d6f084e376c946a94591120c99a3') in 0.051700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001076 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_3.asset
+  artifactKey: Guid(da13adc01cac8504abf05ab56bc77507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_3.asset using Guid(da13adc01cac8504abf05ab56bc77507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1d57124df808408a86a76b833fe6ca') in 0.020750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001707 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_12.asset
+  artifactKey: Guid(636defd8f7f65184aac544ae72d761ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_12.asset using Guid(636defd8f7f65184aac544ae72d761ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eba9c59ac4968f9b42bdc53de315375') in 0.048488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000762 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_5.asset
+  artifactKey: Guid(fc7a3898e3c80104cb53776c105fda9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_5.asset using Guid(fc7a3898e3c80104cb53776c105fda9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f8258a271072223bba2c55e67138cc') in 0.062545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001898 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_7.asset
+  artifactKey: Guid(6b0fe9baf22f2da43a44b63deb0dfff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_7.asset using Guid(6b0fe9baf22f2da43a44b63deb0dfff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc621b1b61f262bec158178393815e1') in 0.066649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001307 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_15.asset
+  artifactKey: Guid(1f386093f7f670b4fb5b0fc224242e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_15.asset using Guid(1f386093f7f670b4fb5b0fc224242e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992375b74cbeb4f6bc7645fa9ce462f5') in 0.057831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001737 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_18.asset
+  artifactKey: Guid(a394c6926ada556489cd19f41e1aef38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_18.asset using Guid(a394c6926ada556489cd19f41e1aef38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c44508352a94cdc97382dde74039110') in 0.023891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001715 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_10.asset
+  artifactKey: Guid(d73471e5b97936346a0d870059b1247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_10.asset using Guid(d73471e5b97936346a0d870059b1247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b191761d9c9267cda411740f2c4b1e80') in 0.053714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001372 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_4.asset
+  artifactKey: Guid(7ad235452f16b3747989a2b1efffde25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_4.asset using Guid(7ad235452f16b3747989a2b1efffde25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a498c77ed8cbbd9e81e3f4580dc171b') in 0.064351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002453 seconds.
+  path: Assets/Resources/Sprites/TerrainPallete.prefab
+  artifactKey: Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TerrainPallete.prefab using Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54600713f877c21faca4ea277f54a1d7') in 0.122338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 140.126323 seconds.
+  path: Assets/Resources/Sprites/TerrainPallete.prefab
+  artifactKey: Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TerrainPallete.prefab using Guid(e01255f1677b7984080d095b4b9b5ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e445ba0330c7ee869ba0546380dd7fd4') in 0.043383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 24.441412 seconds.
+  path: Assets/Resources/Sprites/TilePalletes
+  artifactKey: Guid(a347824c7cc2ee44a9a207c525ebc38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes using Guid(a347824c7cc2ee44a9a207c525ebc38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e5f22e1afaef4f1badcf96d974fa27') in 0.001218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.832916 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab
+  artifactKey: Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab using Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f0abbb86961384972702524d1a54ae') in 0.019041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 297.592551 seconds.
+  path: Assets/CarScript.cs
+  artifactKey: Guid(607906dc7b94eab4483b366b6ef61a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/CarScript.cs using Guid(607906dc7b94eab4483b366b6ef61a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0f3a4d298f397bd1d11bc37ed6ee1895') in 0.264641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001326 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_1.asset
+  artifactKey: Guid(0367118dc8482cb42a8131a146e13bc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_1.asset using Guid(0367118dc8482cb42a8131a146e13bc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7b51ee0f013532c0eaa1790a4e3bc7fe') in 0.062591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000991 seconds.
+  path: Assets/Resources/Sprites/world_0_0_thumb.png
+  artifactKey: Guid(45e7e20d74d60564db571ece118f06f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/world_0_0_thumb.png using Guid(45e7e20d74d60564db571ece118f06f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d98091c5e5471ac9dd25079508d2492') in 339.384643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4003
+========================================================================
+Received Import Request.
+  Time since last request: 196.544403 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc5c19381293f3b6a4f4f3348642370') in 0.012164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.653233 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487729d29ec8bebd3ccc9461b6b4a58b') in 0.001735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.928578 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7408f7ca09c84ee846320800a7ad3cee') in 0.036651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 22.086494 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c605c76f74c9a29897dcd484744326eb') in 0.002125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.906354 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2118ef3e808e73577e5161fdc1ab92f6') in 0.014851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 254.549557 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6c834a59d2d47ec9ca8fce84bdcb91') in 0.002913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.573023 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4379af2dd3234dcf898a481627eb1ce5') in 0.024064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4582.366094 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_0.asset
+  artifactKey: Guid(6199b20873d3c0545b1ababfe7742501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_0.asset using Guid(6199b20873d3c0545b1ababfe7742501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c90a54589281e02fd13ac35ccd161ed') in 0.042027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003658 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_9.asset
+  artifactKey: Guid(b0b6da4f5afd1434eb9e58508ec04def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_9.asset using Guid(b0b6da4f5afd1434eb9e58508ec04def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64a92f80d1b526a40600dcb694eed8e') in 0.028022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002075 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_7.asset
+  artifactKey: Guid(c21be8bdec1314742892822cd98bf084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_7.asset using Guid(c21be8bdec1314742892822cd98bf084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f774f33400faf897c27aaa6ff91cb4ca') in 0.025558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003315 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_3.asset
+  artifactKey: Guid(b9d159c314c05ff4c982cf7b806fe041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_3.asset using Guid(b9d159c314c05ff4c982cf7b806fe041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df59e3dcc93e6a3251157aff826bb79') in 0.029034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002900 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab
+  artifactKey: Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab using Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283370cdd06ef923f8651883e962904e') in 0.154101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_14.asset
+  artifactKey: Guid(c013529cabe45fc4f999f14644bded4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_14.asset using Guid(c013529cabe45fc4f999f14644bded4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336298dfce8657748a5ce18cc34960bb') in 0.028010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_19.asset
+  artifactKey: Guid(6b4a0c16cdce4d54fa5f366c5f3110b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_19.asset using Guid(6b4a0c16cdce4d54fa5f366c5f3110b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa63aea8289e0d61ec32d77ef88451a2') in 0.013457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000751 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_13.asset
+  artifactKey: Guid(e4a8b8f425851bc479ebf15f98eab4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_13.asset using Guid(e4a8b8f425851bc479ebf15f98eab4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638ac04b6f4081039ce16fa1e259e627') in 0.031057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000817 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_16.asset
+  artifactKey: Guid(efbebc952ed431c439fa013083da8d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_16.asset using Guid(efbebc952ed431c439fa013083da8d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a7688090dae6a6b411d52a216a6cb3') in 0.014614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 499.303844 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f3cbbaf1f8510d73f4f3fe90c0a29be5') in 0.014014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 23.591240 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b4e86921450e78496b927b3c48d0c206') in 0.009484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 69.897122 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'effa39e2d1793ddd7b7107e649a30d17') in 0.012476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 298.098748 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '358a0c3061cd6f3b5addb85f955145c0') in 0.009971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 68.690243 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a8e3643412d901481e42a3219e209f3') in 0.014731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 51.592098 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e2e1204df6ac23b19db1cf8eb4cb16a6') in 0.011435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 80.550399 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169aa08c8b97e54243b1edc4bce08362') in 0.001726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.517219 seconds.
+  path: Assets/VariableTile.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VariableTile.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a81bbcb21c40a0e5be2344b3617572') in 0.001900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.314279 seconds.
+  path: Assets/VariableTile.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/VariableTile.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bc81cc1824f0bd2321b21a29f8a802ae') in 0.032609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 62.444223 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(0d582ca60c267a14398a69641fd81c1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(0d582ca60c267a14398a69641fd81c1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6eb925a09eef9e703667c1fb18ba0b7') in 0.037597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.768750 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(0d582ca60c267a14398a69641fd81c1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Road.cs using Guid(0d582ca60c267a14398a69641fd81c1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d79487f3452e1db85fea82b694dd43b') in 0.028556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 111.116930 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(0d582ca60c267a14398a69641fd81c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(0d582ca60c267a14398a69641fd81c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba5ed6b4d0b19a31b711fc92803b9222') in 0.001626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

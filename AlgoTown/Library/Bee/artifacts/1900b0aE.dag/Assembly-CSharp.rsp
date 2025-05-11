@@ -376,7 +376,7 @@
 "Assets/CarScript.cs"
 "Assets/GameMaster.cs"
 "Assets/StationScript.cs"
-"Assets/TileInfo.cs"
+"Assets/VariableTile.cs"
 -langversion:9.0
 
 /deterministic

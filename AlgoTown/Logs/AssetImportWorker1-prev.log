@@ -1,0 +1,677 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'cs' Physical Memory: 16263 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\janko\Nová složka\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+29840
+Successfully changed project path to: C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25528] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2072322194 [EditorId] 2072322194 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UFP758L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25528] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2072322194 [EditorId] 2072322194 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UFP758L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 64.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/janko/OneDrive/Dokumenty/GitHub/Tartaletka/AlgoTown/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     8131 MB
+    Driver:   31.0.101.2130
+Initialize mono
+Mono path[0] = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/janko/Nová složka/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.058521 seconds.
+- Loaded All Assemblies, in  1.509 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.109 seconds
+Domain Reload Profiling: 2604ms
+	BeginReloadAssembly (468ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (135ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (299ms)
+	LoadAllAssembliesAndSetupDomain (544ms)
+		LoadAssemblies (460ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (534ms)
+			TypeCache.Refresh (530ms)
+				TypeCache.ScanAssembly (483ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1111ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (879ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (53ms)
+			SetLoadedEditorAssemblies (33ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (581ms)
+			ProcessInitializeOnLoadMethodAttributes (202ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\janko\OneDrive\Dokumenty\GitHub\Tartaletka\AlgoTown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\janko\OneDrive\Dokumenty\GitHub\Tartaletka\AlgoTown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.936 seconds
+Refreshing native plugins compatible for Editor in 56.94 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.495 seconds
+Domain Reload Profiling: 6402ms
+	BeginReloadAssembly (618ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (79ms)
+	RebuildCommonClasses (180ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (199ms)
+	LoadAllAssembliesAndSetupDomain (2861ms)
+		LoadAssemblies (2334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (911ms)
+			TypeCache.Refresh (735ms)
+				TypeCache.ScanAssembly (638ms)
+			ScanForSourceGeneratedMonoScriptInfo (141ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2496ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1636ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (260ms)
+			ProcessInitializeOnLoadAttributes (1175ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (45ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.53 seconds
+Refreshing native plugins compatible for Editor in 41.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4003 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (198.6 KB). Loaded Objects now: 4461.
+Memory consumption went from 136.1 MB to 135.9 MB.
+Total: 10.449200 ms (FindLiveObjects: 0.724900 ms CreateObjectMapping: 0.683900 ms MarkObjects: 8.579100 ms  DeleteObjects: 0.457500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 456196.929032 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_1.asset
+  artifactKey: Guid(a64f4c3bca9a0b94d9d7242af765ee63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_1.asset using Guid(a64f4c3bca9a0b94d9d7242af765ee63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e284cf6720e035b42a6bcadcf2038d9b') in 0.272893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_13.asset
+  artifactKey: Guid(57d4cba822315da4e9aedd38d612b0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_13.asset using Guid(57d4cba822315da4e9aedd38d612b0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83f9787a2e00053e708b5cfe47f3cd9') in 0.047210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001356 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_9.asset
+  artifactKey: Guid(a4e457d0c507fc242b9e5bd51335f762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_9.asset using Guid(a4e457d0c507fc242b9e5bd51335f762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895ef6b32e280ef772fd68eb8514566a') in 0.067499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001806 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_17.asset
+  artifactKey: Guid(c133997c67a429640897b3605d6c8b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_17.asset using Guid(c133997c67a429640897b3605d6c8b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b7267a8cd8db5377c658a06d587b61') in 0.020322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000892 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_19.asset
+  artifactKey: Guid(919557f107bda7b43966fc2de79303dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_19.asset using Guid(919557f107bda7b43966fc2de79303dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52d6bfd70dc4abdf532cb2af08a6e10') in 0.053882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002290 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_11.asset
+  artifactKey: Guid(66b622657fa82f84083c98b6fb8c96ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_11.asset using Guid(66b622657fa82f84083c98b6fb8c96ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc4ac0af7f73cc7fa3747ccb8831d6d') in 0.036886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002487 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_6.asset
+  artifactKey: Guid(88d09e667d491a4468e4205976ed0037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_6.asset using Guid(88d09e667d491a4468e4205976ed0037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf69fe11281d03e7de269e003c5fa2d4') in 0.029879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002135 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_16.asset
+  artifactKey: Guid(dfd8286f0b19f78439b89a56b3f92d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_16.asset using Guid(dfd8286f0b19f78439b89a56b3f92d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75993bebe273a0ac3746d8c80a21038') in 0.048434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002778 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33)_2.asset
+  artifactKey: Guid(1a31185da56e78f40bdb2bbd132c5d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33)_2.asset using Guid(1a31185da56e78f40bdb2bbd132c5d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c38fd1c6d0f7aacf0e40e9920fe5a9e') in 0.025801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 481.097812 seconds.
+  path: Assets/GameMaster.cs
+  artifactKey: Guid(19fe9f4be24da354087e851f73b598ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMaster.cs using Guid(19fe9f4be24da354087e851f73b598ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb646ca9eec56d2d8e185c0deac1a43a') in 0.263274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001128 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_10.asset
+  artifactKey: Guid(2c98d86c5ba023346854526a332e2ad6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_10.asset using Guid(2c98d86c5ba023346854526a332e2ad6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca99dbb9b10f56e60598f125bf033358') in 0.058930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002019 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (31).png
+  artifactKey: Guid(323946d568f6e1d4f983b06a4c7e7e2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (31).png using Guid(323946d568f6e1d4f983b06a4c7e7e2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'de08efe5d54dcedf023008e80511562d') in 0.211491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001048 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_15.asset
+  artifactKey: Guid(9fbc78d32f597fd478618f38fa243d0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_15.asset using Guid(9fbc78d32f597fd478618f38fa243d0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0dab03dc05375021e551ac318cb6bfe9') in 0.019685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001155 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_17.asset
+  artifactKey: Guid(97ed5e86fa1149741bcd8d2518dda4dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_17.asset using Guid(97ed5e86fa1149741bcd8d2518dda4dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7cd8ca1cfb0b3e3e9337743b347b17b0') in 0.021414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_18.asset
+  artifactKey: Guid(b4fe03fe5a749a744b657e62308f755a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_18.asset using Guid(b4fe03fe5a749a744b657e62308f755a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '94cdbe228900b700c07b7975e07c5284') in 0.019036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001785 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_19.asset
+  artifactKey: Guid(6b4a0c16cdce4d54fa5f366c5f3110b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_19.asset using Guid(6b4a0c16cdce4d54fa5f366c5f3110b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf39b3f8b8f8b53e0946623d768de7ce') in 0.021177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (33).png
+  artifactKey: Guid(66efc7282493ba34799928af54ed444c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (33).png using Guid(66efc7282493ba34799928af54ed444c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d24da48c8105d9c3bb4f8192aaaa345') in 0.228723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000755 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_8.asset
+  artifactKey: Guid(d2e8efd5b618ee74ea11353e3c910ec2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_8.asset using Guid(d2e8efd5b618ee74ea11353e3c910ec2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3306e667332235abc1c62ad870246167') in 0.021257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001237 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ea3e3bd9228653bb35984825b6acfab7') in 0.012530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001281 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_16.asset
+  artifactKey: Guid(efbebc952ed431c439fa013083da8d82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_16.asset using Guid(efbebc952ed431c439fa013083da8d82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5624d04e0fbab7ce5b9fc59bf948513') in 0.021167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002114 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_3.asset
+  artifactKey: Guid(b9d159c314c05ff4c982cf7b806fe041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_3.asset using Guid(b9d159c314c05ff4c982cf7b806fe041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '19ca6a2b2142d6a94f815bccde991440') in 0.019015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002846 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab
+  artifactKey: Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/TerrainPallete.prefab using Guid(e3b7c36685f4baa4f9488c81b47823b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a070eb97839454057466381caf3b27ad') in 0.044725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000868 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (30).png
+  artifactKey: Guid(6bbfcd69fd3b96649bad118aa9f650c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (30).png using Guid(6bbfcd69fd3b96649bad118aa9f650c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '475b17c056e7429909518b7145837e84') in 0.100012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001357 seconds.
+  path: Assets/TileInfo.cs
+  artifactKey: Guid(da4c9bd0d14814e47a3bd5fa709fd60a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileInfo.cs using Guid(da4c9bd0d14814e47a3bd5fa709fd60a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '784b27c98a9b815fd19a623a5ade885e') in 0.014164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001380 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_6.asset
+  artifactKey: Guid(882a30646404dd24ebd90c79e96605cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_6.asset using Guid(882a30646404dd24ebd90c79e96605cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d388d33f2d33fe7dfb2bf6655541d39') in 0.024981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001101 seconds.
+  path: Assets/Resources/Sprites/Props/Trees/trees.png
+  artifactKey: Guid(f41a3419f50dd0d4da1b35d08edc0778) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/Props/Trees/trees.png using Guid(f41a3419f50dd0d4da1b35d08edc0778) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad281b701907c15300340f66aaa1280b') in 0.102274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001030 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_0.asset
+  artifactKey: Guid(6199b20873d3c0545b1ababfe7742501) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_0.asset using Guid(6199b20873d3c0545b1ababfe7742501) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2f3b742732ac97330130f7a234603dd9') in 0.027380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001333 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_4.asset
+  artifactKey: Guid(3375893176f858f40822624a6eccfba5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_4.asset using Guid(3375893176f858f40822624a6eccfba5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c7977ae77ce21bd61ca5307b3d653fc6') in 0.031187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001229 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_13.asset
+  artifactKey: Guid(e4a8b8f425851bc479ebf15f98eab4ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_13.asset using Guid(e4a8b8f425851bc479ebf15f98eab4ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd4df471d80f5739377eed31387937d30') in 0.026851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_20.asset
+  artifactKey: Guid(08e360b5a4f45004c92b553c71244ecb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_20.asset using Guid(08e360b5a4f45004c92b553c71244ecb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '66c8a99232ea4fbf426723be102d24a6') in 0.027936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000995 seconds.
+  path: Assets/StationScript.cs
+  artifactKey: Guid(016476c95adce90449e7cec2aa0eb605) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/StationScript.cs using Guid(016476c95adce90449e7cec2aa0eb605) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d193c69670b083dee7f7302d47e7ca9') in 0.014457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001126 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (35).png
+  artifactKey: Guid(c5875b4991fd1614eb61f0beee37afa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (35).png using Guid(c5875b4991fd1614eb61f0beee37afa5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd4a45861ccb1639884bc45f6f058084a') in 0.097332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000916 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_7.asset
+  artifactKey: Guid(c21be8bdec1314742892822cd98bf084) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_7.asset using Guid(c21be8bdec1314742892822cd98bf084) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6d7f01a6467f9994674ae7d95b55684b') in 0.022119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001339 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_11.asset
+  artifactKey: Guid(36147ea76e082cd4e8911bae97b57a0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_11.asset using Guid(36147ea76e082cd4e8911bae97b57a0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6eb40af4f2d252690cf5231bedd610cb') in 0.019269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001095 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_2.asset
+  artifactKey: Guid(9c8dad06d948ff043b725fe040c455bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_2.asset using Guid(9c8dad06d948ff043b725fe040c455bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cf338c9abc79816720bf8d794845f075') in 0.024870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001188 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_9.asset
+  artifactKey: Guid(b0b6da4f5afd1434eb9e58508ec04def) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_9.asset using Guid(b0b6da4f5afd1434eb9e58508ec04def) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b39ed7a0edcc06a37e20f175cc80d49') in 0.023022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000825 seconds.
+  path: Assets/RoadFlags.prefab
+  artifactKey: Guid(9f1017d8a5396bb4287c31d0027b590f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RoadFlags.prefab using Guid(9f1017d8a5396bb4287c31d0027b590f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '71d7b868aef9a1234a551b1a6088ca0b') in 0.015011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.001252 seconds.
+  path: Assets/Resources/Sprites/world_1024_0_thumb.png
+  artifactKey: Guid(c0fbfafe7abc5844aaa2e197bee9b2c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/world_1024_0_thumb.png using Guid(c0fbfafe7abc5844aaa2e197bee9b2c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72999ff8bb6abf2066e49de037801d4d') in 27.791578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1026
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_12.asset
+  artifactKey: Guid(1a6db320dc3e1d54d9e90fb906f70ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_12.asset using Guid(1a6db320dc3e1d54d9e90fb906f70ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fd8702a660cce8c03e3b80095c0796e1') in 0.021573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001616 seconds.
+  path: Assets/Resources/Sprites/world_0_1024_thumb.png
+  artifactKey: Guid(aa413347d281ff1489ee8d71e4890645) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/world_0_1024_thumb.png using Guid(aa413347d281ff1489ee8d71e4890645) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '504baf40bb9818b48944badfef3dd37a') in 0.093000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001260 seconds.
+  path: Assets/Resources/Sprites/pixil-frame-0 (34).png
+  artifactKey: Guid(2cc740d4e910c3b418b235effe78964b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/pixil-frame-0 (34).png using Guid(2cc740d4e910c3b418b235effe78964b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c969fef1740353ec0cb85bd5d5aa1cc1') in 0.094871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001191 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_14.asset
+  artifactKey: Guid(c013529cabe45fc4f999f14644bded4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_14.asset using Guid(c013529cabe45fc4f999f14644bded4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7b5a71e740df2b87ae6b2c5b9396b79') in 0.026591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001015 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_5.asset
+  artifactKey: Guid(b450d55bf7f36e845b0b27b6ddf8f62b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_5.asset using Guid(b450d55bf7f36e845b0b27b6ddf8f62b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f0d45bf0ac69e496a20ea5d822f6234d') in 0.019486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 223.300687 seconds.
+  path: Assets/Road.cs
+  artifactKey: Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Road.cs using Guid(ae65f7f9b5747884da870be68a888829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f2af9c1fc34993a652dacbebee52dd') in 0.001085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.460641 seconds.
+  path: Assets/Resources/Sprites/world_0_0_thumb.png
+  artifactKey: Guid(45e7e20d74d60564db571ece118f06f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Resources/Sprites/world_0_0_thumb.png using Guid(45e7e20d74d60564db571ece118f06f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'df3f88227be51811f3a0e0e30c5b3daa') in 361.146717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4003
+========================================================================
+Received Import Request.
+  Time since last request: 4834.783426 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_1.asset
+  artifactKey: Guid(0367118dc8482cb42a8131a146e13bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_1.asset using Guid(0367118dc8482cb42a8131a146e13bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b99826188d58e11e4ac8d692506cd43') in 0.042001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003713 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_6.asset
+  artifactKey: Guid(882a30646404dd24ebd90c79e96605cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_6.asset using Guid(882a30646404dd24ebd90c79e96605cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2033511e095c2643aacb4b600d32459') in 0.024974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001411 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_10.asset
+  artifactKey: Guid(2c98d86c5ba023346854526a332e2ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_10.asset using Guid(2c98d86c5ba023346854526a332e2ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef3810282c1367cf438ba7198272115') in 0.030265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003766 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_11.asset
+  artifactKey: Guid(36147ea76e082cd4e8911bae97b57a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_11.asset using Guid(36147ea76e082cd4e8911bae97b57a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f4e80be74910165bca823c215cb0c1') in 0.028247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002926 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_12.asset
+  artifactKey: Guid(1a6db320dc3e1d54d9e90fb906f70ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_12.asset using Guid(1a6db320dc3e1d54d9e90fb906f70ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9027d55d9b5455e02a0e39b303c37c4') in 0.025669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002317 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_4.asset
+  artifactKey: Guid(3375893176f858f40822624a6eccfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_4.asset using Guid(3375893176f858f40822624a6eccfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55165aba11ed26bed5b7006d3669cd3') in 0.026960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001952 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_18.asset
+  artifactKey: Guid(b4fe03fe5a749a744b657e62308f755a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_18.asset using Guid(b4fe03fe5a749a744b657e62308f755a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66dc29d38a074e0cb48585e485606556') in 0.040055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002045 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_2.asset
+  artifactKey: Guid(9c8dad06d948ff043b725fe040c455bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_2.asset using Guid(9c8dad06d948ff043b725fe040c455bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64a54ea1bdb5c9690eff1b495fbf1ee') in 0.027219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000993 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_8.asset
+  artifactKey: Guid(d2e8efd5b618ee74ea11353e3c910ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_8.asset using Guid(d2e8efd5b618ee74ea11353e3c910ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f32655a0c2b6e4062219cb1a101ebb0') in 0.034727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000824 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_15.asset
+  artifactKey: Guid(9fbc78d32f597fd478618f38fa243d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_15.asset using Guid(9fbc78d32f597fd478618f38fa243d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1fb73283abd456cbf83a2698908ba8') in 0.014719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_17.asset
+  artifactKey: Guid(97ed5e86fa1149741bcd8d2518dda4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_17.asset using Guid(97ed5e86fa1149741bcd8d2518dda4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea332dc22dac511f1ee549f0fe39641') in 0.027103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001013 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_20.asset
+  artifactKey: Guid(08e360b5a4f45004c92b553c71244ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_20.asset using Guid(08e360b5a4f45004c92b553c71244ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a5b71ba2a4390f1ef127927c9c960d') in 0.011935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000898 seconds.
+  path: Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_5.asset
+  artifactKey: Guid(b450d55bf7f36e845b0b27b6ddf8f62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/TilePalletes/pixil-frame-0 (33)_5.asset using Guid(b450d55bf7f36e845b0b27b6ddf8f62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b8c12790c665cd6da05ccc84c87587') in 0.037797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
